@@ -382,6 +382,29 @@ const ERRORS_PERMISSION = {
     },
   ],
 };
+const GENERATE_PERMISSION = [
+  {
+    id: '9981225257359246',
+    parentId: '',
+    label: 'sys.menu.code-generate',
+    name: 'Generate',
+    icon: 'solar:code-bold-duotone',
+    type: PermissionType.CATALOGUE,
+    route: 'generate',
+    order: 7,
+    children: [
+      {
+        id: '9557056851997154',
+        parentId: '9981225257359246',
+        label: 'sys.menu.code-generate.',
+        name: '403',
+        type: PermissionType.MENU,
+        route: '403',
+        component: '/sys/error/Page403.tsx',
+      }
+    ]
+  }
+];
 const OTHERS_PERMISSION = [
   {
     id: '3981225257359246',

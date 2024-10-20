@@ -25,17 +25,7 @@ module.exports = {
     },
   },
   /* ESLint 中基础配置需要继承的配置 */
-  extends: [
-    'airbnb',
-    'airbnb-typescript',
-    'airbnb/hooks',
-    'plugin:@typescript-eslint/recommended', // 使用@typescript-eslint/eslint-plugin推荐的规则
-    'plugin:jsx-a11y/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'prettier', // 增加 prettier 相关的校验规则
-    'plugin:prettier/recommended', // 开启 Prettier 插件推荐的规则
-  ],
+  extends: ['airbnb', 'airbnb-typescript', 'airbnb/hooks', 'plugin:@typescript-eslint/recommended', 'plugin:jsx-a11y/recommended', 'plugin:import/errors', 'plugin:import/warnings', 'prettier', 'plugin:prettier/recommended', 'plugin:storybook/recommended'],
   /* ESLint文件所依赖的插件 */
   plugins: [
     '@typescript-eslint',

@@ -83,6 +83,7 @@
       "closeRight": "Close Right"
     },
     "menu": {
+      "code-generate": "Code Generate",
       "dashboard": "Dashboard",
       "workbench": "Workbench",
       "analysis": "Analysis",

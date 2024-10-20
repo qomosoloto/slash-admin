@@ -48,7 +48,7 @@ export const useUserPermission = () => useUserStore((state) => state.userInfo.pe
 export const useUserActions = () => useUserStore((state) => state.actions);
 
 export const useSignIn = () => {
-  const navigatge = useNavigate();
+  const navigate = useNavigate();
   const { message } = App.useApp();
   const { setUserToken, setUserInfo } = useUserActions();
 
@@ -60,9 +60,10 @@ export const useSignIn = () => {
     try {
       const res = await signInMutation.mutateAsync(data);
       const { user, accessToken, refreshToken } = res;
+      console.log('signIn res: ', res);
       setUserToken({ accessToken, refreshToken });
       setUserInfo(user);
-      navigatge(HOMEPAGE, { replace: true });
+      navigate(HOMEPAGE, { replace: true });
     } catch (err) {
       message.warning({
         content: err.message,
